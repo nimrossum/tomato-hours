@@ -1,7 +1,5 @@
 # Tomato Hours
 
-https://tomato-hours.joglr.dev/
-
 A pomodoro timer for tracking work hours and earnings.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
