@@ -5,12 +5,12 @@
   "homepage": "https://tomato-hours.nimrossum.com/",
   "author": {
     "name": "Jonas Røssum",
-    "url": "https://joglr.dev",
-    "email": "jonas.g.roessum@gmail.com"
+    "url": "https://nimrossum.com",
+    "email": "jonas@nimrossum.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/joglr/tomato-hours.git"
+    "url": "https://github.com/nimrossum/tomato-hours.git"
   },
   "scripts": {
     "start": "react-scripts start",
