@@ -1,7 +1,7 @@
 import React from "react"
 import { connect } from "react-redux"
 import { setDisplayAboutDialog } from "./../actions"
-import { version, author } from "./../../package.json"
+import pkg from "./../../package.json"
 import Dialog from "@material-ui/core/Dialog"
 import DialogTitle from "@material-ui/core/DialogTitle"
 import Grid from "@material-ui/core/Grid"
@@ -10,6 +10,7 @@ import ListItem from "@material-ui/core/ListItem"
 import ListItemText from "@material-ui/core/ListItemText"
 import Button from "@material-ui/core/Button"
 
+const { version, author } = pkg
 let AboutDialog = ({
   onAboutDialogClose,
   displayAboutDialog,
