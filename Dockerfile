@@ -1,5 +1,5 @@
-# Use Node.js version 10
-FROM mhart/alpine-node:10
+# Use Node.js version 22
+FROM mhart/alpine-node:22
 
 # Set the working directory
 WORKDIR /usr/src
