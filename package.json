@@ -50,7 +50,7 @@
     "react-dom": "^17.0.1",
     "react-ga": "^3.2.1",
     "react-redux": "^7.2.2",
-    "react-scripts": "^4.0.1",
+    "react-scripts": "^5.0.1",
     "redux": "^4.0.5",
     "redux-timer-middleware": "^1.0.0",
     "rimraf": "^3.0.2",
