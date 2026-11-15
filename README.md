@@ -4,6 +4,29 @@ https://tomato-hours.joglr.dev/
 
 A pomodoro timer for tracking work hours and earnings.
 
+## Google Calendar planning
+
+The Week view uses Google Calendar as its source of truth. Create an OAuth
+client ID for a web application, add the app's local and production origins to
+the authorized JavaScript origins, and set:
+
+```sh
+REACT_APP_GOOGLE_CLIENT_ID=your-client-id.apps.googleusercontent.com
+```
+
+Setup:
+
+1. Enable the Google Calendar API in a Google Cloud project.
+2. Configure the OAuth consent screen for the account(s) that will use the app.
+3. Create a Web application OAuth client ID.
+4. Add `http://localhost:3000` and `https://tomato-hours.joglr.dev` to its
+   authorized JavaScript origins.
+5. Copy `.env.example` to `.env.local` and set the client ID.
+
+The app requests Google Calendar event access only when the user chooses
+“Connect Google Calendar”. Without this variable, the Week view shows a
+configuration error instead of pretending that sync is available.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

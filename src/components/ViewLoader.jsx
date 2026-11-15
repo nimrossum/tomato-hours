@@ -6,9 +6,11 @@ import SessionsView from './../views/SessionsView'
 import SettingsView from './../views/SettingsView'
 import TimerView from './../views/TimerView'
 import DebugView from './../views/DebugView'
+import CalendarView from './../views/CalendarView'
 
 const viewMap = [
   'TimerView',
+  'CalendarView',
   'SessionsView',
   'SettingsView'
 ]
@@ -18,6 +20,9 @@ if (process.env.NODE_ENV === 'development')
 
 const getView = view => {
   switch (viewMap[view]) {
+    case 'CalendarView': {
+      return <CalendarView />
+    }
     case 'SessionsView': {
       return <SessionsView />
     }
